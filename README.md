@@ -17,3 +17,22 @@ Upload this folder's files and `assets/` directory to a static host (Netlify, Ve
 
 ## Source / editorial decisions
 The concept follows the pitch deck's two-asset vision: a proposed 5-acre 10 MW data-centre parcel and a separate 5-acre ISLE CLUB district. It intentionally leaves the detailed ₹638 Cr/₹698 Cr investment figures, illustrative returns, and proposed pricing out of the public marketing experience; those belong in reviewed, investor-gated materials. All images are extracted from the user-provided pitch deck. No external email address, contact, certification, tenant contract, construction status or groundbreaking date has been invented.
+
+
+## Logo and contact update
+- Header and footer now use the supplied IGNIVA logo, recolored white/teal for contrast over dark surfaces.
+- `assets/igniva-logo.png` contains the original charcoal/teal transparent logo for light backgrounds.
+- `assets/igniva-logo-light.png` is the white/teal transparent variant for dark backgrounds.
+- Contact email: `sales@ignivatechisland.com` (mailto links; your email mailbox must exist separately).
+
+To update GitHub Pages: upload and commit `index.html`, `styles.css`, `script.js`, and the two PNGs within `assets/`, preserving paths.
+
+## November 2026 coworking / typography enhancement
+- A dedicated `#coworking` section under the proposed ISLE CLUB programme, with architectural coworking visuals and illustrative professionals using laptops.
+- The added lifestyle visual is concept art, not a photo of an existing operating campus.
+- Added navigation and footer links for Coworking and adjusted desktop navigation font sizing to 14px.
+- Updated hero, vision, and contact copy to include coworking enquiries.
+- Retained the supplied IGNIVA logo and `sales@ignivatechisland.com` contact address.
+
+### GitHub Pages update
+Extract the ZIP, then upload its **contents** to the repository root, replacing existing `index.html`, `styles.css`, `script.js`, and adding `assets/coworking-professionals.webp` along with other assets. Commit on `main`. Don't upload only the ZIP.
