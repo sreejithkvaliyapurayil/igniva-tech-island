@@ -19,3 +19,42 @@
 .coworking{background:#f5f9f8}.coworking-intro{display:grid;grid-template-columns:1.1fr .85fr;align-items:end;gap:70px;margin-bottom:42px}.coworking h2{font-size:clamp(44px,5vw,76px);line-height:1.13;letter-spacing:-.06em;margin:0}.coworking-lede p{font-size:15px;line-height:1.9;color:#627a7e}.coworking-lede .text-link{margin-top:10px}.coworking-gallery{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;height:460px}.coworking-photo{position:relative;min-height:0;margin:0;overflow:hidden;background:#12303a}.coworking-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}.coworking-photo:hover img{transform:scale(1.035)}.coworking-photo figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,#071e27dc,transparent);color:white;padding:50px 24px 21px;font-size:10px;font-weight:700;letter-spacing:.14em}.coworking-benefits{display:grid;grid-template-columns:1.12fr repeat(3,1fr);gap:0;margin-top:47px;border-top:1px solid #d3e3e1;border-bottom:1px solid #d3e3e1}.coworking-benefits>div,.coworking-benefits>article{padding:30px 21px;border-right:1px solid #d3e3e1}.coworking-benefits>:first-child{padding-left:0}.coworking-benefits>:last-child{border-right:0}.coworking-stat strong{font:700 clamp(30px,3vw,46px) Manrope;letter-spacing:-.055em;display:block}.coworking-stat small{font-size:15px;letter-spacing:-.02em}.coworking-stat span,.coworking-benefits article>span{font-size:10px;color:#15858a;font-weight:700;letter-spacing:.09em}.coworking-stat span{display:block;margin-top:15px}.coworking-benefits h3{font-size:18px;margin:17px 0 8px}.coworking-benefits p{font-size:12px;color:#708487;line-height:1.8;margin:0}.coworking-cta{margin-top:45px;padding:26px 34px;background:#082c35;color:white;display:flex;justify-content:space-between;align-items:center;gap:30px}.coworking-cta h3{font-size:26px;letter-spacing:-.04em;margin:0 0 9px}.coworking-cta p{font-size:13px;color:#afd0d0;margin:0}.coworking-cta .btn{flex-shrink:0}
 @media(max-width:900px){.coworking-intro{grid-template-columns:1fr;gap:24px}.coworking-gallery{height:370px}.coworking-benefits{grid-template-columns:1fr 1fr}.coworking-benefits>:nth-child(2){border-right:0}.coworking-benefits>:nth-child(-n+2){border-bottom:1px solid #d3e3e1}}
 @media(max-width:720px){.coworking h2{font-size:clamp(39px,9vw,55px)}.coworking-gallery{grid-template-columns:1fr;height:auto}.coworking-photo-main{height:270px}.coworking-photo-side{height:240px}.coworking-benefits{grid-template-columns:1fr 1fr;margin-top:30px}.coworking-benefits>div,.coworking-benefits>article{padding:24px 14px}.coworking-benefits>:first-child{padding-left:14px}.coworking-benefits h3{font-size:16px}.coworking-cta{padding:24px;align-items:stretch;flex-direction:column}.coworking-cta .btn{justify-content:space-between}}
+
+
+/* --- IGNIVA premium refinement update --- */
+.nav a{font-size:15px;font-weight:700;letter-spacing:-.01em}
+.hero-shade{background:linear-gradient(90deg,rgba(3,20,28,.90) 0%,rgba(3,20,28,.66) 43%,rgba(3,20,28,.28) 100%),linear-gradient(0deg,rgba(2,18,25,.76) 0%,transparent 34%)}
+.hero-content.hero-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.82fr);gap:44px;align-items:end;padding-top:clamp(160px,20vh,220px)}
+.hero-copy{max-width:760px}
+.hero-copy .hero-actions .btn{background:rgba(10,38,47,.22);backdrop-filter:blur(10px);border:1px solid rgba(112,228,220,.75);box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.hero-copy .hero-actions .btn:hover{background:rgba(11,44,53,.42)}
+.hero-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px;max-width:760px}
+.hero-kpis div{padding:16px 18px;background:rgba(8,29,37,.44);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px)}
+.hero-kpis strong{display:block;font:800 clamp(20px,2.1vw,28px)/1.1 Manrope;margin-bottom:8px;letter-spacing:-.03em;color:#fff}
+.hero-kpis span{display:block;font-size:10px;letter-spacing:.16em;color:#9fdad6}
+.hero-showcase{position:relative;z-index:1;display:grid;gap:16px;align-self:center;margin-bottom:34px}
+.hero-panel,.hero-stat-card{background:rgba(7,29,37,.72);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);overflow:hidden;box-shadow:0 20px 45px rgba(2,12,17,.22)}
+.hero-panel img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-panel-main{height:340px;border-radius:28px}
+.hero-panel-main figcaption,.hero-panel-mini figcaption{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;background:linear-gradient(180deg,transparent 0%,rgba(4,17,22,.86) 82%);color:#fff}
+.hero-panel-main figcaption span,.hero-panel-mini figcaption span,.hero-stat-card span{display:block;font-size:10px;font-weight:700;letter-spacing:.16em;color:#9fe1dd;margin-bottom:9px}
+.hero-panel-main figcaption strong,.hero-panel-mini figcaption strong{font:700 22px/1.22 Manrope;letter-spacing:-.03em}
+.hero-panel{position:relative}
+.hero-mini-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:16px}
+.hero-panel-mini{height:220px;border-radius:24px}
+.hero-stat-card{padding:24px 24px 22px;border-radius:24px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(180deg,rgba(9,36,45,.86),rgba(10,53,60,.82))}
+.hero-stat-card h3{margin:0 0 12px;font:700 28px/1.15 Manrope;letter-spacing:-.045em;color:#fff}
+.hero-stat-card p{margin:0;color:#d5e3e3;font-size:14px;line-height:1.8}
+.timeline{gap:0}
+.step{padding:28px 18px 24px 0;display:flex;flex-direction:column;min-height:275px}
+.step-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.status-pill{display:inline-flex;align-items:center;justify-content:center;padding:8px 12px;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.13em;white-space:nowrap}
+.status-done{background:#daf7f1;color:#0a6a63}
+.status-progress{background:#edf3f3;color:#51686d}
+.step.completed .step-num{background:#d7f6f0;color:#0b7a73;box-shadow:0 0 0 6px rgba(18,184,165,.08)}
+.step.in-progress .step-num{background:#f0f4f4;color:#35555d}
+.step-track{margin-top:auto;height:10px;border-radius:999px;background:#e7eeee;overflow:hidden}
+.step-track span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#15b7ad,#78d8d1)}
+.coworking-stat strong{white-space:nowrap}
+@media(max-width:1180px){.hero-content.hero-layout{grid-template-columns:1fr}.hero-showcase{max-width:860px;margin:10px 0 70px}.hero h1{max-width:900px}}
+@media(max-width:720px){.nav a{font-size:14px}.hero-content.hero-layout{padding-top:165px;gap:24px}.hero-kpis{grid-template-columns:1fr;max-width:100%}.hero-panel-main{height:260px}.hero-mini-grid{grid-template-columns:1fr}.hero-panel-mini{height:190px}.hero-stat-card h3{font-size:24px}.hero-bottom{bottom:18px}.step{min-height:auto}.step-top{align-items:flex-start;flex-direction:column}.status-pill{padding:7px 10px}}

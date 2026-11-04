@@ -36,3 +36,6 @@ To update GitHub Pages: upload and commit `index.html`, `styles.css`, `script.js
 
 ### GitHub Pages update
 Extract the ZIP, then upload its **contents** to the repository root, replacing existing `index.html`, `styles.css`, `script.js`, and adding `assets/coworking-professionals.webp` along with other assets. Commit on `main`. Don't upload only the ZIP.
+
+
+Updated: premium hero with coworking showcase, roadmap statuses, and 60,000 Sq.ft coworking allocation.
