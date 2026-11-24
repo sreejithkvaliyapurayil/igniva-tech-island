@@ -21,11 +21,31 @@
         <div class="contact-panel">
           <h2>Request a project briefing</h2>
           <p>Tell us about your partnership interest and how you prefer to be contacted. Our team can discuss the proposed development, current milestones and next steps.</p>
-          <a class="btn primary" href="mailto:sales@ignivatechisland.com?subject=IGNIVA%20Tech%20Island%20Project%20Briefing">Request a briefing by email</a>
+          <a class="btn primary" id="enquiry-form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSfGG6R9YJ7rgbxzetmMRigjMdkDQOzNQGG6AjoWykyYiIL-Zw/viewform">Open the enquiry form</a>
           <p><a class="contact-email" href="mailto:sales@ignivatechisland.com">sales@ignivatechisland.com</a></p>
         </div>
       </div>
     </section>
   </main>
+  <script>
+    const enquiryLink = document.getElementById('enquiry-form-link');
+    const landingParams = new URLSearchParams(window.location.search);
+    const formUrl = new URL(enquiryLink.href);
+    const campaignFields = {
+      utm_source: 'entry.1975008162',
+      utm_medium: 'entry.155267911',
+      utm_campaign: 'entry.2962915',
+      utm_content: 'entry.1217338681'
+    };
+
+    for (const [parameter, field] of Object.entries(campaignFields)) {
+      const value = landingParams.get(parameter)?.trim();
+      if (value && /^[\w .-]{1,120}$/.test(value)) {
+        formUrl.searchParams.set(field, value);
+      }
+    }
+
+    enquiryLink.href = formUrl.href;
+  </script>
 </body>
 </html>
