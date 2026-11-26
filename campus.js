@@ -14,14 +14,14 @@ const query = document.querySelector("#query");
 const results = document.querySelector("#results");
 const searchStatus = document.querySelector("#search-status");
 const pages = [
-  ["Tech Island homepage", "./", "willingdon kochi campus"],
-  ["Phase I · AI IT Parks & Play Area", "./#phase-one", "enterprise workspaces recreation go-karting skating paintball gaming"],
-  ["Coworking", "./#coworking", "workspace work club offices suites"],
-  ["Phase II · Kochi Data Centre", "./#infrastructure", "data center infrastructure server 10 mw"],
-  ["About Us", "about-us.html", "establishments developments calicut cochin beach bay 4in bazar airport hotel logistics hub"],
-  ["Our Story", "our-story.html", "history founder 2015"],
-  ["Our Leadership", "our-leadership.html", "nijesh puthalath chairman managing director"],
-  ["Partnership enquiries", "partner-enquiries/", "contact sales enquiry"],
+  ["Tech Island homepage", "/", "willingdon kochi campus"],
+  ["Phase I · AI IT Parks & Play Area", "/phase-one.html", "enterprise workspaces recreation go-karting gaming fitness creator studios robotic reception"],
+  ["Coworking", "/phase-one.html#work-club", "workspace work club offices suites"],
+  ["Phase II · Kochi Data Centre", "/phase-two.html", "data center infrastructure server 10 mw"],
+  ["About Us", "/about-us.html", "establishments developments calicut cochin beach bay 4in bazar airport hotel logistics hub"],
+  ["Our Story", "/our-story.html", "history founder 2015"],
+  ["Our Leadership", "/our-leadership.html", "nijesh puthalath chairman managing director"],
+  ["Partnership enquiries", "/partner-enquiries/", "contact sales enquiry"],
 ];
 function showResults() {
   const terms = query.value.toLowerCase().trim().split(/\s+/);
@@ -74,21 +74,16 @@ if (slides.length) {
   syncRotation();
 }
 
-fetch("campus-media.json").then(response => response.ok ? response.json() : {}).then(({ introVideos = [], socials = [] }) => {
+fetch("/campus-media.json").then(response => response.ok ? response.json() : {}).then(({ introVideos = [], socials = [] }) => {
   const socialLinks = document.querySelector("#social-links");
-  for (const [index, { label, url }] of socials.entries()) {
+  for (const { label, url } of socials) {
     const link = document.createElement("a");
     link.textContent = label;
     link.href = url;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     socialLinks.append(link);
-    if (index === 0) {
-      const headerLink = link.cloneNode(true);
-      headerLink.textContent = "Instagram ↗";
-      headerLink.setAttribute("aria-label", label);
-      nav.append(headerLink);
-    }
+
   }
 
   const intro = document.querySelector(".intro-film");
@@ -117,7 +112,7 @@ fetch("campus-media.json").then(response => response.ok ? response.json() : {}).
     brand.hidden = false;
     timeout = setTimeout(closeIntro, 7000);
     const source = introVideos[index++];
-    video.src = matchMedia("(max-width: 760px)").matches ? source.mobile : source.desktop;
+    video.src = new URL(matchMedia("(max-width: 760px)").matches ? source.mobile : source.desktop, location.origin).href;
     video.play().catch(closeIntro);
   }
   video.addEventListener("playing", () => { clearTimeout(timeout); brand.hidden = true; });

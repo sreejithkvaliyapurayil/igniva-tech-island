@@ -13,6 +13,7 @@ img{max-width:100%;display:block}
 .header,footer{background:var(--night);color:white}
 .header-inner,.footer{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.2rem}
 .brand img{width:clamp(8.5rem,15vw,12.5rem);height:auto}
+.header .brand{flex:none}
 nav,.footer div{display:flex;align-items:center;gap:clamp(.8rem,2vw,2rem);flex-wrap:wrap}
 nav a,nav button,summary{font-weight:650;text-decoration:none}
 nav button,.menu-toggle{color:inherit;border:1px solid #829397;background:transparent;padding:.45rem .75rem}
@@ -20,7 +21,7 @@ nav button,.menu-toggle{color:inherit;border:1px solid #829397;background:transp
 details{position:relative}
 details div{position:absolute;z-index:5;top:calc(100% + .4rem);left:0;min-width:12rem;background:var(--night);padding:.55rem;border:1px solid #58676b}
 details a{display:block;padding:.55rem}
-nav a:hover,summary:hover{color:#83ddd3}
+nav a:hover,summary:hover,#navigation [aria-current="page"]{color:#83ddd3}
 .showcase{position:relative;isolation:isolate;background:#182928;color:white;min-height:29rem;height:min(72svh,52rem)}
 .gallery,.slide,.slide img{position:absolute;inset:0;width:100%;height:100%;margin:0}
 .slide img{object-fit:cover}

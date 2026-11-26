@@ -1,0 +1,35 @@
+.phase-intro,.phase-tint{background:#e6ece7}
+.phase-section{padding-block:clamp(2.5rem,6vw,5.5rem)}
+.phase-intro h1{font-size:clamp(2.85rem,7.5vw,6.6rem);line-height:1.05}
+.phase-lede{max-width:65ch;font-size:clamp(1.05rem,2vw,1.28rem)}
+.phase-jumps{margin:1.6rem 0 2rem;padding-block:.7rem;border-block:1px solid #b2c2ba}
+.phase-jumps a{padding:.35rem 0}
+.brochure-figure{margin:1.5rem 0;min-width:0}
+.brochure-figure img,.feature .brochure-figure img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain}
+.brochure-figure figcaption{padding:.65rem 0;font-size:.78rem;letter-spacing:.05em;color:#3b5851}
+.phase-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10rem),1fr));margin:1.55rem 0;gap:1px;border:1px solid #c2cec7;background:#c2cec7}
+.phase-facts div{display:flex;flex-direction:column-reverse;background:var(--paper);padding:clamp(.8rem,2.5vw,1.5rem)}
+.phase-facts dd{margin:0;font-size:clamp(1.2rem,3.2vw,2.25rem);font-weight:750;color:var(--teal)}
+.phase-facts dt{font-size:.88rem}
+.phase-cards,.phase-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:1rem;margin-block:1.7rem}
+.phase-cards article,.phase-checks article{border:1px solid #bdcbc3;background:var(--paper);min-width:0}
+.phase-cards .brochure-figure{margin:0}
+.phase-cards img{aspect-ratio:1.8;object-fit:cover}
+.phase-cards figcaption,.phase-cards article>div,.phase-checks article{padding:.8rem 1rem}
+.phase-cards article>div,.phase-checks article{padding:1.1rem}
+.phase-note{max-width:75ch;border-inline-start:2px solid var(--teal);padding-inline-start:1rem;font-size:.88rem}
+.phase-roadmap{padding-inline-start:1.65rem;max-width:72ch}
+.phase-roadmap li{padding:.75rem 0;border-bottom:1px solid #becdc4}
+.phase-roadmap strong,.phase-roadmap span{display:block}
+.phase-enquiry,.enquiry-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:start;gap:clamp(1.25rem,5vw,4rem)}
+.phase-enquiry .cta{margin-bottom:.8rem}
+.enquiry-grid h1{font-size:clamp(2.6rem,6vw,5rem)}
+.enquiry-grid .contact-panel{border:1px solid #bdcbc3;background:#e6ece7;padding:clamp(1rem,3vw,2rem)}
+.enquiry-grid .contact-panel h2{font-size:clamp(1.6rem,3vw,2.5rem)}
+.enquiry-grid details{margin-bottom:.8rem}
+.enquiry-grid .cta{margin-block:.35rem .8rem}
+@media(max-width:760px){
+ .phase-jumps{width:auto;flex-direction:row;flex-wrap:wrap;gap:.35rem 1rem}
+ .phase-enquiry,.enquiry-grid{grid-template-columns:1fr}
+ .enquiry-grid nav{width:auto;display:block}
+}
