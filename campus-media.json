@@ -1,0 +1,7 @@
+{
+  "introVideos": [{ "desktop": "assets/intro-1080.mp4", "mobile": "assets/intro-720.mp4" }],
+  "socials": [
+    { "label": "IGNIVA Tech Island on Instagram", "url": "https://www.instagram.com/igniva_techisland/" },
+    { "label": "IGNIVA Group on Instagram", "url": "https://www.instagram.com/ignivagroup/" }
+  ]
+}
