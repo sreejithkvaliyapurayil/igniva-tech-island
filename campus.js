@@ -15,7 +15,7 @@ const results = document.querySelector("#results");
 const searchStatus = document.querySelector("#search-status");
 const pages = [
   ["Tech Island homepage", "/", "willingdon kochi campus"],
-  ["Phase I · AI IT Parks & Play Area", "/phase-one.html", "enterprise workspaces recreation go-karting gaming fitness creator studios robotic reception"],
+  ["Phase I · AI IT Park & Play Arena", "/phase-one.html", "enterprise workspaces recreation go-karting gaming fitness creator studios robotic reception"],
   ["Coworking", "/phase-one.html#work-club", "workspace work club offices suites"],
   ["Phase II · Kochi Data Centre", "/phase-two.html", "data center infrastructure server 10 mw"],
   ["About Us", "/about-us.html", "establishments developments calicut cochin beach bay 4in bazar airport hotel logistics hub"],

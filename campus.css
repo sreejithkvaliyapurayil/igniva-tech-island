@@ -65,12 +65,17 @@ dialog li{margin:.4rem 0}
 .film-brand img{width:min(62vw,17rem);height:auto}
 #skip-intro{position:absolute;bottom:2rem;right:6%}
 #social-links a+a{margin-left:.7rem}
-@media(max-width:760px){
+@media(max-width:960px){
  .header-inner{flex-wrap:wrap}
  .menu-toggle{display:block}
+ #navigation{width:100%;flex-direction:column;align-items:stretch;gap:.8rem}
+ #navigation button{text-align:left}
+ .header[data-menu-ready] #navigation:not(.open){display:none}
+ #navigation details div{position:static;margin-top:.4rem}
+}
+@media(max-width:760px){
  nav{width:100%;flex-direction:column;align-items:stretch;gap:.8rem}
  nav button{text-align:left}
- .header[data-menu-ready] nav:not(.open){display:none}
  details div{position:static;margin-top:.4rem}
  .feature,.company-grid{grid-template-columns:1fr}
  .footer{align-items:flex-start;flex-direction:column}
