@@ -51,32 +51,26 @@ const motion = matchMedia("(prefers-reduced-motion: reduce)");
 let filmPlaying = false;
 let syncRotation = () => {};
 if (slides.length) {
+  const showcase = document.querySelector(".showcase");
   let index = 0;
-  let auto = !motion.matches;
   let timer;
-  const controls = document.querySelector(".gallery-controls");
-  const toggle = document.querySelector("#rotation");
-  const number = document.querySelector("#slide-number");
-  controls.hidden = false;
 
-  function advance(step) {
+  function advance() {
     slides[index].hidden = true;
-    index = (index + step + slides.length) % slides.length;
+    index = (index + 1) % slides.length;
     slides[index].hidden = false;
-    number.textContent = String(index + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0");
   }
   syncRotation = () => {
     clearInterval(timer);
-    toggle.textContent = auto ? "Pause" : "Play";
-    if (auto && !filmPlaying && !document.hidden) timer = setInterval(() => advance(1), 5000);
+    if (!motion.matches && !filmPlaying && !document.hidden &&
+        !showcase.contains(document.activeElement)) {
+      timer = setInterval(advance, 2000);
+    }
   };
-  controls.querySelectorAll("[data-slide]").forEach(button => button.addEventListener("click", () => {
-    advance(Number(button.dataset.slide));
-    syncRotation();
-  }));
-  toggle.addEventListener("click", () => { auto = !auto; syncRotation(); });
-  motion.addEventListener("change", () => { auto = !motion.matches; syncRotation(); });
+  motion.addEventListener("change", syncRotation);
   document.addEventListener("visibilitychange", syncRotation);
+  showcase.addEventListener("focusin", syncRotation);
+  showcase.addEventListener("focusout", () => setTimeout(syncRotation, 0));
   syncRotation();
 }
 

@@ -34,9 +34,7 @@ h1{font-size:clamp(3rem,8.5vw,8rem)}
 h2{font-size:clamp(2rem,4vw,4rem)}
 .hero-copy>p:last-child,.inner-hero p:last-child{font-size:clamp(1rem,2vw,1.4rem);max-width:40rem}
 .eyebrow,small{font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;font-weight:750}
-.gallery-controls{position:absolute;bottom:1.3rem;right:6%;display:flex;align-items:center;gap:.5rem}
-.gallery-controls button,.intro-film button{color:white;background:#0a0e14df;border:1px solid #c3cbce;min-height:44px;padding:.3rem .7rem;border-radius:.2rem}
-#slide-number{font-variant-numeric:tabular-nums;text-shadow:0 1px 4px #000}
+.intro-film button{color:white;background:#0a0e14df;border:1px solid #c3cbce;min-height:44px;padding:.3rem .7rem;border-radius:.2rem}
 .summary{border-bottom:1px solid #c7cfca}
 .summary-inner{display:grid;grid-template-columns:1fr 1fr}
 .summary a{padding:1.25rem 0;text-decoration:none;font-size:clamp(1rem,2.3vw,1.65rem);font-weight:700}
@@ -77,6 +75,5 @@ dialog li{margin:.4rem 0}
  .footer{align-items:flex-start;flex-direction:column}
  .showcase{height:68svh;min-height:26rem}
  .slide img{object-position:center}
- .slide figcaption{bottom:4.8rem}
- .gallery-controls{left:6%;right:auto}
+ .slide figcaption{bottom:1.6rem}
 }
